@@ -1,0 +1,20 @@
+@model Material
+@{
+    ViewData["Title"] = "Delete Material";
+}
+<h1>Delete Confirmation</h1>
+<div class="alert alert-warning">
+    Are you sure you want to delete <strong>@Model.Name</strong>?
+</div>
+
+<dl class="row">
+    <dt class="col-sm-2">Supplier</dt><dd class="col-sm-10">@Model.Supplier</dd>
+    <dt class="col-sm-2">Quantity</dt><dd class="col-sm-10">@Model.Quantity</dd>
+    <dt class="col-sm-2">Unit Price</dt><dd class="col-sm-10">@Model.UnitPrice.ToString("C")</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button class="btn btn-danger" type="submit">Delete</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+</form>
