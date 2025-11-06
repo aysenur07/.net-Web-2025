@@ -1,0 +1,24 @@
+@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Top Oldest Students";
+    int count = ViewBag.Count ?? 3;
+}
+<h1>Top @count Oldest Students</h1>
+
+<table class="table table-bordered table-striped">
+  <thead><tr><th>Name</th><th>Age</th><th>Department</th></tr></thead>
+  <tbody>
+  @foreach (var s in Model)
+  {
+    <tr>
+      <td>@s.Name</td>
+      <td>@s.Age</td>
+      <td>@s.Department</td>
+    </tr>
+  }
+  </tbody>
+</table>
+
+<p>
+  <a class="btn btn-secondary" asp-action="Index">Back</a>
+</p>

@@ -1,0 +1,14 @@
+D:\DersDeneme\LinqExamples\bin\Debug\net8.0\LinqExamples.exe
+D:\DersDeneme\LinqExamples\bin\Debug\net8.0\LinqExamples.deps.json
+D:\DersDeneme\LinqExamples\bin\Debug\net8.0\LinqExamples.runtimeconfig.json
+D:\DersDeneme\LinqExamples\bin\Debug\net8.0\LinqExamples.dll
+D:\DersDeneme\LinqExamples\bin\Debug\net8.0\LinqExamples.pdb
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.GeneratedMSBuildEditorConfig.editorconfig
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.AssemblyInfoInputs.cache
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.AssemblyInfo.cs
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.csproj.CoreCompileInputs.cache
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.dll
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\refint\LinqExamples.dll
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.pdb
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\LinqExamples.genruntimeconfig.cache
+D:\DersDeneme\LinqExamples\obj\Debug\net8.0\ref\LinqExamples.dll

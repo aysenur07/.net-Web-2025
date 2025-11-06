@@ -1,0 +1,46 @@
+@model List<Student>
+@{
+    ViewData["Title"] = "Students";
+    var depts = ViewBag.AllDepts as List<string> ?? new List<string>();
+    string current = ViewBag.SelectedDept as string ?? "";
+}
+
+<h1>Students</h1>
+
+<form method="get" class="row g-2 mb-3">
+  <div class="col-auto">
+    <select name="dept" class="form-select">
+      <option value="" selected="@(string.IsNullOrEmpty(current))">All Departments</option>
+      @foreach (var d in depts)
+      {
+        <option value="@d" selected="@(string.Equals(current,d,StringComparison.OrdinalIgnoreCase))">@d</option>
+      }
+    </select>
+  </div>
+  <div class="col-auto">
+    <button class="btn btn-primary" type="submit">Filter</button>
+    <a class="btn btn-secondary" href="/Students">Clear</a>
+  </div>
+  <div class="col-auto">
+    <a class="btn btn-outline-dark" asp-action="Top" asp-route-count="3">Top 3 Oldest</a>
+    <a class="btn btn-outline-dark" asp-action="Summary">Summary</a>
+  </div>
+</form>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th><th>Age</th><th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach (var s in Model)
+  {
+    <tr>
+      <td>@s.Name</td>
+      <td>@s.Age</td>
+      <td>@s.Department</td>
+    </tr>
+  }
+  </tbody>
+</table>
