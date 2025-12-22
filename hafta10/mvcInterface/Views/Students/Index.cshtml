@@ -1,0 +1,25 @@
+@model List<StudentCourseVm>
+
+<h2>Students & Courses</h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Öğrenci Ekle</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Name</td>
+                <td>@s.Age</td>
+                <td>@s.CourseName</td>
+            </tr>
+        }
+    </tbody>
+</table>
